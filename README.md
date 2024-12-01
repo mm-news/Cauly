@@ -34,7 +34,7 @@ Cauly Bot 是一款專為 Minecraft 玩家設計的 Discord 機器人，支援�
 ### 1. 系統需求
 - **Python**：3.8 或以上版本
 - **discord.py 模組**：這是與 Discord API 進行互動所需的 Python 模組。可以終端機中執行```pip install discord.py```
-- **Discord Bot Token**：需在 [Discord 開發者門戶](https://discord.com/developers/applications) 中創建應用並獲取。
+- **Discord Bot Token**：需在 [Discord 開發者](https://discord.com/developers/applications) 中創建應用並獲取。
 
 ### 2. 改變變數
 在你的程式碼中，將your_user_id 替換成授權使用者的 Discord 用戶 ID，並將 your_token 替換成你的 Discord 機器人 Token。
@@ -44,7 +44,8 @@ Cauly Bot 是一款專為 Minecraft 玩家設計的 Discord 機器人，支援�
 
 ---
 ## 許可證
-### 此專案使用 MIT 許可證
-你可以自由使用和修改程式碼，但請保留許可證聲明。
+### 此專案使用 MIT 許可證。
+參閱LICENSE。
+
 
 
