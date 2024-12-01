@@ -38,10 +38,21 @@ Only authorized users can use the following commands:
 - **discord.py module**: This is the Python module required to interact with Discord's API. Run `pip install discord.py` in the terminal.  
 - **Discord Bot Token**: You need to create an application and obtain your Discord bot token from the [Discord Developer Portal](https://discord.com/developers/applications).  
 
-### 2. Change Variables  
+### 2.File Configuration
+
+```
+cauly-bot/
+├── main.py           # Main program, responsible for starting the bot
+├── cogs/             # Folder for functional modules
+│   ├── java.py       # Module for querying Java server status
+│   ├── bedrock.py    # Module for querying Bedrock server status
+│   ├── skin.py       # Module for querying player skins
+```
+
+### 3. Change Variables  
 In your code, replace `your_user_id` with the Discord user ID of the authorized user, and replace `your_token` with your Discord bot token.  
 
-### 3. Running the Program  
+### 4. Running the Program  
 Run `main.py` to start the bot.  
 
 ---
@@ -53,7 +64,7 @@ Please refer to the [LICENSE](LICENSE) file for more details.
 
 ---
 
-# 功能概述  
+#＃ 功能概述  
 
 ### 公開指令  
 1. **`/bedrockserver <伺服器 IP>`**  
@@ -85,10 +96,21 @@ Please refer to the [LICENSE](LICENSE) file for more details.
 - **discord.py 模組**：這是與 Discord API 進行互動所需的 Python 模組。可以在終端機中執行 `pip install discord.py`  
 - **Discord Bot Token**：需在 [Discord 開發者](https://discord.com/developers/applications) 中創建應用並獲取。  
 
-### 2. 改變變數  
-在你的程式碼中，將 `your_user_id` 替換成授權使用者的 Discord 用戶 ID，並將 `your_token` 替換成你的 Discord 機器人 Token。  
+### 2.檔案配置
 
-### 3. 執行程式  
+```
+cauly-bot/
+├── main.py           # 主程式，負責啟動機器人
+├── cogs/             # 功能模組資料夾
+│   ├── java.py       # 查詢 Java 伺服器狀態的模組
+│   ├── bedrock.py    # 查詢 Bedrock 伺服器狀態的模組
+│   ├── skin.py       # 查詢玩家皮膚模組
+```
+
+### 3. 改變變數  
+在你的`main.py`中，將 `your_user_id` 替換成授權使用者的 Discord 用戶 ID，並將 `your_token` 替換成你的 Discord 機器人 Token。  
+
+### 4. 執行程式  
 執行 `main.py` 來啟動機器人。  
 
 ---
