@@ -64,7 +64,7 @@ Please refer to the [LICENSE](LICENSE) file for more details.
 
 ---
 
-#＃ 功能概述  
+## 功能概述  
 
 ### 公開指令  
 1. **`/bedrockserver <伺服器 IP>`**  
