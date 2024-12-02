@@ -3,7 +3,8 @@ import asyncio
 import discord
 from discord.ext import commands
 
-AUTHORIZED_USER_ID = your_user_id
+AUTHORIZED_USER_ID =  your_user_id
+Token = "Your Token"
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix = "!", intents = intents)
@@ -40,7 +41,8 @@ async def load_extensions():
 async def main():
     async with bot:
         await load_extensions()
-        await bot.start("your_token")
+        await bot.start(Token)
 
 if __name__ == "__main__":
     asyncio.run(main())
+    
