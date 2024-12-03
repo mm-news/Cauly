@@ -1,9 +1,8 @@
-
 # Cauly Bot  
 
-**Cauly Bot** is a Discord bot designed for Minecraft and Brawl Stars players, supporting server status checking, player skin downloads, battle log tracking, and module management functions.  
+**Cauly Bot** is a Discord bot designed for Minecraft players, supporting server status checking, player skin downloads, and module management functions.  
 
-Cauly Bot 是一款專為 Minecraft 和 Brawl Stars 玩家設計的 Discord 機器人，支援查詢伺服器狀態、玩家皮膚下載、戰鬥紀錄追蹤，以及模組管理功能。
+Cauly Bot 是一款專為 Minecraft 玩家設計的 Discord 機器人，支援查詢伺服器狀態、玩家皮膚下載，以及模組管理功能。
 
 ---
 
@@ -18,12 +17,6 @@ Cauly Bot 是一款專為 Minecraft 和 Brawl Stars 玩家設計的 Discord 機�
 
 3. **`/player_skin <player name>`**  
    Check a player's Minecraft skin and generate a download link.  
-
-4. **`/brawlstarts_player <player name>`**  
-   Get information about a Brawl Stars player.  
-   
-5. **`/battlelog <player name>`**  
-   Get the recent battle log of a specific Brawl Stars player.  
 
 ### Authorized User Commands  
 Only authorized users can use the following commands:  
@@ -43,7 +36,6 @@ Only authorized users can use the following commands:
 ### 1. System Requirements  
 - **Python**: Version 3.8 or above.  
 - **discord.py module**: This is the Python module required to interact with Discord's API. Run `pip install discord.py` in the terminal.  
-- **Brawl Stars API Key**: Register for the Brawl Stars API at [Brawl Stars Developer Portal](https://developer.brawlstars.com/#/) to get your API key.
 - **Discord Bot Token**: You need to create an application and obtain your Discord bot token from the [Discord Developer Portal](https://discord.com/developers/applications).  
 
 ### 2. File Configuration
@@ -55,12 +47,10 @@ cauly-bot/
 │   ├── java.py          # Module for querying Java server status
 │   ├── bedrock.py       # Module for querying Bedrock server status
 │   ├── skin.py          # Module for querying player skins
-│   ├── bs_player.py     # Module for interacting with Brawl Stars Player API
-│   ├── bs_battlelog.py  # Module for interacting with Brawl Stars Battle Log API
 ```
 
 ### 3. Change Variables  
-In your code, replace `your_user_id` with the Discord user ID of the authorized user, `your_token` with your Discord bot token, and `your_brawl_api_key` with your Brawl Stars API key.  
+In your code, replace `your_user_id` with the Discord user ID of the authorized user, and `your_token` with your Discord bot token.  
 
 ### 4. Running the Program  
 Run `main.py` to start the bot.  
@@ -86,12 +76,6 @@ Please refer to the [LICENSE](LICENSE) file for more details.
 3. **`/player_skin <玩家名稱>`**  
    查詢玩家的 Minecraft 皮膚，並生成下載連結。  
 
-4. **`/brawlstarts_player <玩家名稱>`**  
-   查詢 Brawl Stars 玩家資訊。  
-
-5. **`/battlelog <玩家名稱>`**  
-   查詢特定 Brawl Stars 玩家最近的戰鬥紀錄。  
-
 ### 授權用戶指令  
 僅授權用戶可使用以下命令：  
 1. **`!load <模組名>`**  
@@ -110,7 +94,6 @@ Please refer to the [LICENSE](LICENSE) file for more details.
 ### 1. 系統需求  
 - **Python**：3.8 或以上版本  
 - **discord.py 模組**：這是與 Discord API 進行互動所需的 Python 模組。可以在終端機中執行 `pip install discord.py`  
-- **Brawl Stars API 密鑰**：在 [Brawl Stars 開發者平台](https://developer.brawlstars.com/#/) 註冊並獲取 API 密鑰。  
 - **Discord Bot Token**：需在 [Discord 開發者](https://discord.com/developers/applications) 中創建應用並獲取。  
 
 ### 2.檔案配置
@@ -122,12 +105,10 @@ cauly-bot/
 │   ├── java.py          # 查詢 Java 伺服器狀態的模組
 │   ├── bedrock.py       # 查詢 Bedrock 伺服器狀態的模組
 │   ├── skin.py          # 查詢玩家皮膚模組
-│   ├── bs_player.py     # 與 Brawl Stars 玩家 API 互動的模組
-│   ├── bs_battlelog.py  # 與 Brawl Stars 戰鬥紀錄 API 互動的模組
 ```
 
 ### 3. 改變變數  
-在你的`main.py`中，將 `your_user_id` 替換成授權使用者的 Discord 用戶 ID，`your_token` 替換成你的 Discord 機器人 Token，並將 `your_brawl_api_key` 替換成你的 Brawl Stars API 密鑰。  
+在你的`main.py`中，將 `your_user_id` 替換成授權使用者的 Discord 用戶 ID，`your_token` 替換成你的 Discord 機器人 Token。  
 
 ### 4. 執行程式  
 執行 `main.py` 來啟動機器人。  
@@ -140,4 +121,3 @@ cauly-bot/
 請參閱 [LICENSE](LICENSE) 文件了解更多資訊。  
 
 ---
-
