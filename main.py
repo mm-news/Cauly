@@ -2,12 +2,24 @@ import os
 import asyncio
 import discord
 from discord.ext import commands
+from configparser import ConfigParser
 
-AUTHORIZED_USER_ID =  your_user_id
-Token = "Your Token"
+# Load the configuration file
+config = ConfigParser()
+config.read("config.ini")
 
+AUTHORIZED_USER_ID = config.get("DISCORD", "authorized_user_id")
+TOKEN = config.get("DISCORD", "dev_token")
+
+if not TOKEN or not AUTHORIZED_USER_ID or TOKEN.startswith("::") or AUTHORIZED_USER_ID.startswith("::"):
+    print("Please fill in the configuration file")
+    exit()
+
+
+# Set up the bot
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix = "!", intents = intents)
+bot = commands.Bot(command_prefix="!", intents=intents)
+
 
 @bot.event
 async def on_ready():
@@ -34,15 +46,15 @@ async def reload(ctx, extension):
 
 
 async def load_extensions():
-    for filename in os.listdir("./cogs"): # If an error occurs, try using the absolute path
+    # If an error occurs, try using the absolute path
+    for filename in os.listdir("./cogs"):
         if filename.endswith(".py"):
             await bot.load_extension(f"cogs.{filename[:-3]}")
 
 async def main():
     async with bot:
         await load_extensions()
-        await bot.start(Token)
+        await bot.start(TOKEN)
 
 if __name__ == "__main__":
     asyncio.run(main())
-    
